@@ -39,7 +39,7 @@ A modern **Kotlin-based Android app** built to demonstrate frontend skills in UI
 3. Build and run the app on a device or emulator.
 
 
-Author
+Author:
 
 Izza Farhat
 Final Year Student - Bachelors in Artificial Intelligence
@@ -48,6 +48,6 @@ FAST NUCES
 
 LinkedIn:  http://www.linkedin.com/in/izza-farhat-2a81002aa 
 
-Built as a demonstration of practical frontend skills for team onboarding.
+(Built as a demonstration of practical frontend skills for team onboarding.)
 
 
