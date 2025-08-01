@@ -43,7 +43,9 @@ Author
 
 Izza Farhat
 Final Year Student - Bachelors in Artificial Intelligence
+
 FAST NUCES 
+
 LinkedIn:  http://www.linkedin.com/in/izza-farhat-2a81002aa 
 
 Built as a demonstration of practical frontend skills for team onboarding.
