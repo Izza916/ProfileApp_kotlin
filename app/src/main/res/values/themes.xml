@@ -1,0 +1,26 @@
+<resources>
+    <style name="Theme.IzzaProfileApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryContainer">@color/teal_200</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.IzzaProfileApp.SmallComponent</item>
+        <item name="buttonStyle">@style/Widget.IzzaProfileApp.Button</item>
+        <item name="android:statusBarColor">@color/purple_500</item>
+    </style>
+
+    <style name="ShapeAppearance.IzzaProfileApp.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="Widget.IzzaProfileApp.Button" parent="Widget.Material3.Button">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Theme.IzzaSplash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/purple_500</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_round</item>
+        <item name="windowSplashScreenAnimationDuration">500</item>
+        <item name="postSplashScreenTheme">@style/Theme.IzzaProfileApp</item>
+    </style>
+
+</resources>

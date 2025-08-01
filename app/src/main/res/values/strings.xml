@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IzzaProfileApp</string>
+    <string name="name">Izza Farhat</string>
+    <string name="description">Student at FAST National University of Computer and Emerging Sciences, Karachi</string>
+    <string name="tagline">Aspiring Developer, Kotlin Learner | This is a sample app solely meant for learning Kotlin</string>
+    <string name="about_me">About Me</string>
+    <string name="skills">Skills</string>
+    <string name="profile_pic_desc">Profile Picture</string>
+    <string name="projects">Projects</string>
+    <string name="contact">Contact</string>
+</resources>

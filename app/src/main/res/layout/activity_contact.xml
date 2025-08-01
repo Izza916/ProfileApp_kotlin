@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactActivity">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/light_purple_background"
+        android:paddingBottom="56dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get in Touch"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Email"
+                android:drawableLeft="@drawable/ic_email"
+                android:gravity="left|center_vertical"
+                android:paddingStart="16dp"
+                android:layout_marginBottom="8dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLinkedIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Connect on LinkedIn"
+                android:drawableLeft="@drawable/ic_linkedin"
+                android:gravity="left|center_vertical"
+                android:paddingStart="16dp"
+                android:layout_marginBottom="8dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnGitHub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View GitHub Profile"
+                android:drawableLeft="@drawable/ic_github"
+                android:gravity="left|center_vertical"
+                android:paddingStart="16dp"
+                android:layout_marginBottom="8dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAppointment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Schedule an Appointment"
+                android:drawableLeft="@drawable/ic_calendar"
+                android:gravity="left|center_vertical"
+                android:paddingStart="16dp"
+                android:layout_marginBottom="8dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMeeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start a Google Meet"
+                android:drawableLeft="@drawable/ic_meet"
+                android:gravity="left|center_vertical"
+                android:paddingStart="16dp"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our Locations"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="8dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="8dp">
+                <org.osmdroid.views.MapView
+                    android:id="@+id/mapMainCampus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Main Campus: St‑4 Sector 17‑D On National Highway Karachi, Pakistan"
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="8dp">
+                <org.osmdroid.views.MapView
+                    android:id="@+id/mapCityCampus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="City Campus: 22‑G, Block‑6, PECHS, Karachi, Pakistan"
+                android:textSize="14sp"
+                android:layout_marginBottom="32dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color"
+        app:labelVisibilityMode="labeled" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

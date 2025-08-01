@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.IzzaProfileApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/teal_200</item>
+        <item name="colorPrimaryContainer">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+</resources>
